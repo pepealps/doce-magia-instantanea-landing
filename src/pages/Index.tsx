@@ -1,12 +1,189 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import UrgencyBanner from "@/components/UrgencyBanner";
+import CTAButton from "@/components/CTAButton";
+import TestimonialCard from "@/components/TestimonialCard";
+import BenefitItem from "@/components/BenefitItem";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white font-sans">
+      <UrgencyBanner />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-purple/10 to-hotpink/10 px-4 py-10 md:py-16">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex flex-col md:flex-row md:items-center gap-8">
+            <div className="md:w-1/2 text-center md:text-left">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Transforme <span className="text-hotpink">Recheios Sem Fogo</span> em até <span className="bg-yellow-200 px-1">R$3.735 por mês</span> com doces irresistíveis!
+              </h1>
+              <p className="text-lg md:text-xl text-gray-700 mb-6">
+                Descubra receitas que encantam, vendem sozinhas e ficam prontas em <span className="font-bold">15 minutos</span> — sem ligar o fogão!
+              </p>
+              <div className="mb-8 flex justify-center md:justify-start">
+                <CTAButton text="QUERO RECEBER AS RECEITAS SECRETAS" />
+              </div>
+            </div>
+            <div className="md:w-1/2 flex justify-center">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-pink rounded-2xl blur-lg opacity-30 animate-pulse"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" 
+                  alt="Recheios Sem Fogo" 
+                  className="relative rounded-xl shadow-2xl w-full max-w-md z-10"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="px-4 py-12 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+            O que você vai <span className="text-hotpink">conquistar</span> com o Recheios Sem Fogo
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <BenefitItem text="Lucro de até R$3.735/mês com recheios simples" />
+            <BenefitItem text="Prontas em 15 minutos, sem usar o fogão" />
+            <BenefitItem text="Ingredientes baratos e fáceis de achar" />
+            <BenefitItem text="Receita testada por mais de 18 mil alunas" />
+            <BenefitItem text="Suporte exclusivo para tirar suas dúvidas" />
+            <BenefitItem text="Bônus: 10 ideias para embalar e vender mais" />
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="px-4 py-12 bg-gray-50">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">
+            Veja o que quem já comprou está dizendo:
+          </h2>
+          <p className="text-center text-gray-600 mb-8">Histórias reais de mulheres que transformaram suas vidas</p>
+          
+          <div className="grid gap-6 md:grid-cols-2">
+            <TestimonialCard 
+              name="Maria Silva" 
+              text="Fiz o recheio de leite ninho e vendi tudo em uma tarde! Lucrei R$280 no primeiro final de semana. As receitas são muito fáceis e deliciosas."
+              imageSrc="https://randomuser.me/api/portraits/women/44.jpg"
+            />
+            <TestimonialCard 
+              name="Ana Santos" 
+              text="Comecei vendendo para família e hoje tenho uma clientela fiel. O curso pagou-se na primeira semana. O recheio de chocolate belga é o mais vendido!"
+              imageSrc="https://randomuser.me/api/portraits/women/68.jpg"
+            />
+            <TestimonialCard 
+              name="Juliana Oliveira" 
+              text="Sou mãe solo e precisava de uma renda extra. Com as receitas, consigo fazer R$1.200 por mês trabalhando só nos finais de semana."
+              imageSrc="https://randomuser.me/api/portraits/women/65.jpg"
+            />
+            <TestimonialCard 
+              name="Patrícia Mendes" 
+              text="As receitas são um sucesso! Comecei com uma encomenda pequena e hoje faço mais de 20 potes por semana. Obrigada pela oportunidade!"
+              imageSrc="https://randomuser.me/api/portraits/women/54.jpg"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="px-4 py-12 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-black/5 p-8 md:p-12 rounded-xl shadow-md">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+              Assista e <span className="text-hotpink">descubra</span> como é fácil começar
+            </h2>
+            <div className="relative w-full pb-[56.25%]">
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-200 rounded-lg">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-hotpink rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-0 h-0 border-t-8 border-b-8 border-l-12 border-t-transparent border-b-transparent border-l-white ml-1"></div>
+                  </div>
+                  <p className="text-gray-600">Vídeo demonstrativo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Guarantee Section */}
+      <section className="px-4 py-12 bg-vibrantgreen/10">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="md:w-1/3 flex justify-center">
+              <div className="w-40 h-40 bg-vibrantgreen rounded-full flex items-center justify-center text-white">
+                <div className="text-center">
+                  <div className="text-4xl font-bold">7</div>
+                  <div className="text-sm uppercase font-bold">dias</div>
+                  <div className="text-xs mt-1">garantia total</div>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-2/3">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center md:text-left">
+                Garantia incondicional de 7 dias
+              </h2>
+              <p className="text-lg mb-6">
+                Se por qualquer motivo você não gostar do curso ou sentir que não está funcionando para você, basta enviar um email e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+              </p>
+              <p className="font-bold text-vibrantgreen">
+                Zero risco para você experimentar!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="px-4 py-12 bg-gradient-to-b from-purple/5 to-hotpink/20">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-2xl md:text-4xl font-extrabold mb-4">
+            O cupom aplicado só é válido <span className="bg-yellow-200 px-1">HOJE!</span>
+          </h2>
+          <p className="text-lg md:text-xl mb-8">
+            Depois disso, o preço volta ao normal e você perde esta oportunidade única!
+          </p>
+          
+          <div className="bg-white p-6 md:p-8 rounded-xl shadow-xl max-w-xl mx-auto mb-8">
+            <div className="text-gray-500 line-through mb-2">De R$297</div>
+            <div className="text-3xl md:text-5xl font-extrabold text-hotpink mb-4">Por apenas R$97</div>
+            <div className="text-sm text-gray-600 mb-6">Pagamento único, acesso vitalício</div>
+            <CTAButton 
+              text="QUERO TRANSFORMAR MINHA VIDA AGORA" 
+              className="w-full max-w-md mx-auto"
+            />
+          </div>
+          
+          <div className="text-center text-gray-500 text-sm">
+            <p>Pagamento 100% seguro</p>
+            <div className="flex justify-center gap-4 mt-2">
+              <span>💳 Cartão de crédito</span>
+              <span>🔒 Ambiente seguro</span>
+              <span>✅ Satisfação garantida</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white text-sm py-6 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+              <p>© 2025 Recheios Sem Fogo - Todos os direitos reservados</p>
+            </div>
+            <div className="flex gap-4">
+              <a href="#" className="text-gray-400 hover:text-white">Política de Privacidade</a>
+              <a href="#" className="text-gray-400 hover:text-white">Termos de Uso</a>
+              <a href="#" className="text-gray-400 hover:text-white">Contato</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

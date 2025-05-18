@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for Recheios Sem Fogo
+				hotpink: "#FF007F",
+				purple: "#9B30FF",
+				vibrantgreen: "#34BB33",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +89,28 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-scale': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' },
+				},
+				'shake': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
+					'20%, 40%, 60%, 80%': { transform: 'translateX(5px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-scale': 'pulse-scale 2s infinite',
+				'shake': 'shake 0.8s ease-in-out',
+			},
+			backgroundImage: {
+				'gradient-pink': 'linear-gradient(90deg, #FF007F 0%, #FF5CAA 100%)',
+			},
+			fontFamily: {
+				'sans': ['Nunito', 'sans-serif'],
 			}
 		}
 	},
