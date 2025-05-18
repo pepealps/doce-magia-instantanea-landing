@@ -1,13 +1,10 @@
-
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
 import BenefitItem from "@/components/BenefitItem";
 import BonusCard from "@/components/BonusCard";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white font-sans">
+  return <div className="min-h-screen bg-white font-sans">
       <UrgencyBanner />
       
       {/* Hero Section */}
@@ -28,11 +25,7 @@ const Index = () => {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-2xl blur-lg opacity-40 animate-pulse"></div>
-                <img 
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=450" 
-                  alt="Ebooks Recheios Sem Fogo" 
-                  className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10"
-                />
+                <img alt="Ebooks Recheios Sem Fogo" className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10" src="/lovable-uploads/07530643-3f85-447d-8c42-cd73848923a4.png" />
               </div>
             </div>
           </div>
@@ -66,26 +59,10 @@ const Index = () => {
           <p className="text-center text-gray-600 mb-8">Histórias reais de mulheres que transformaram suas vidas</p>
           
           <div className="grid gap-6 md:grid-cols-2">
-            <TestimonialCard 
-              name="Maria Silva" 
-              text="Fiz o recheio de leite ninho e vendi tudo em uma tarde! Lucrei R$280 no primeiro final de semana. As receitas são muito fáceis e deliciosas."
-              imageSrc="https://randomuser.me/api/portraits/women/44.jpg"
-            />
-            <TestimonialCard 
-              name="Ana Santos" 
-              text="Comecei vendendo para família e hoje tenho uma clientela fiel. O curso pagou-se na primeira semana. O recheio de chocolate belga é o mais vendido!"
-              imageSrc="https://randomuser.me/api/portraits/women/68.jpg"
-            />
-            <TestimonialCard 
-              name="Juliana Oliveira" 
-              text="Sou mãe solo e precisava de uma renda extra. Com as receitas, consigo fazer R$1.200 por mês trabalhando só nos finais de semana."
-              imageSrc="https://randomuser.me/api/portraits/women/65.jpg"
-            />
-            <TestimonialCard 
-              name="Patrícia Mendes" 
-              text="As receitas são um sucesso! Comecei com uma encomenda pequena e hoje faço mais de 20 potes por semana. Obrigada pela oportunidade!"
-              imageSrc="https://randomuser.me/api/portraits/women/54.jpg"
-            />
+            <TestimonialCard name="Maria Silva" text="Fiz o recheio de leite ninho e vendi tudo em uma tarde! Lucrei R$280 no primeiro final de semana. As receitas são muito fáceis e deliciosas." imageSrc="https://randomuser.me/api/portraits/women/44.jpg" />
+            <TestimonialCard name="Ana Santos" text="Comecei vendendo para família e hoje tenho uma clientela fiel. O curso pagou-se na primeira semana. O recheio de chocolate belga é o mais vendido!" imageSrc="https://randomuser.me/api/portraits/women/68.jpg" />
+            <TestimonialCard name="Juliana Oliveira" text="Sou mãe solo e precisava de uma renda extra. Com as receitas, consigo fazer R$1.200 por mês trabalhando só nos finais de semana." imageSrc="https://randomuser.me/api/portraits/women/65.jpg" />
+            <TestimonialCard name="Patrícia Mendes" text="As receitas são um sucesso! Comecei com uma encomenda pequena e hoje faço mais de 20 potes por semana. Obrigada pela oportunidade!" imageSrc="https://randomuser.me/api/portraits/women/54.jpg" />
           </div>
         </div>
       </section>
@@ -119,11 +96,7 @@ const Index = () => {
           </h2>
           
           <div className="flex justify-center">
-            <img 
-              src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-              alt="Comentários de alunas"
-              className="w-full max-w-[600px] rounded-lg shadow-lg"
-            />
+            <img alt="Comentários de alunas" className="w-full max-w-[600px] rounded-lg shadow-lg" src="/lovable-uploads/115a5602-ac33-4166-bcb6-f8d8e7772512.png" />
           </div>
         </div>
       </section>
@@ -136,26 +109,10 @@ const Index = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <BonusCard
-              title="Bolinho no Pote"
-              description="O Sucesso o Ano Inteiro!"
-              imageSrc="/lovable-uploads/91d5f335-0fdd-4731-8fcd-46c6fd23dfef.png"
-            />
-            <BonusCard
-              title="Trufas"
-              description="Irresistíveis e Altamente Lucrativas!"
-              imageSrc="/lovable-uploads/9ead97cd-2336-4513-91c4-a6c1bea75da0.png"
-            />
-            <BonusCard
-              title="Brigadeiros"
-              description="O Clássico que Faz Lucrar!"
-              imageSrc="/lovable-uploads/bd1e2030-a09f-4ad7-b024-f6969abff313.png"
-            />
-            <BonusCard
-              title="Donuts"
-              description="A Novidade que Encanta e Lucra!"
-              imageSrc="/lovable-uploads/ce506717-a286-404a-a824-9564324249f6.png"
-            />
+            <BonusCard title="Bolinho no Pote" description="O Sucesso o Ano Inteiro!" imageSrc="/lovable-uploads/91d5f335-0fdd-4731-8fcd-46c6fd23dfef.png" />
+            <BonusCard title="Trufas" description="Irresistíveis e Altamente Lucrativas!" imageSrc="/lovable-uploads/9ead97cd-2336-4513-91c4-a6c1bea75da0.png" />
+            <BonusCard title="Brigadeiros" description="O Clássico que Faz Lucrar!" imageSrc="/lovable-uploads/bd1e2030-a09f-4ad7-b024-f6969abff313.png" />
+            <BonusCard title="Donuts" description="A Novidade que Encanta e Lucra!" imageSrc="/lovable-uploads/ce506717-a286-404a-a824-9564324249f6.png" />
           </div>
         </div>
       </section>
@@ -202,10 +159,7 @@ const Index = () => {
             <div className="text-gray-500 line-through mb-2">De R$297</div>
             <div className="text-3xl md:text-5xl font-extrabold text-hotpink mb-4">Por apenas R$97</div>
             <div className="text-sm text-gray-600 mb-6">Pagamento único, acesso vitalício</div>
-            <CTAButton 
-              text="QUERO TRANSFORMAR MINHA VIDA AGORA" 
-              className="w-full max-w-md mx-auto"
-            />
+            <CTAButton text="QUERO TRANSFORMAR MINHA VIDA AGORA" className="w-full max-w-md mx-auto" />
           </div>
           
           <div className="text-center text-gray-500 text-sm">
@@ -234,8 +188,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
