@@ -1,3 +1,4 @@
+
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -122,13 +123,11 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="md:w-1/3 flex justify-center">
-              <div className="w-40 h-40 bg-vibrantgreen rounded-full flex items-center justify-center text-white">
-                <div className="text-center">
-                  <div className="text-4xl font-bold">7</div>
-                  <div className="text-sm uppercase font-bold">dias</div>
-                  <div className="text-xs mt-1">garantia total</div>
-                </div>
-              </div>
+              <img 
+                src="/lovable-uploads/e2c225a7-aede-4080-9096-febf04db681c.png" 
+                alt="Garantia de 7 dias" 
+                className="w-48 h-48 object-contain"
+              />
             </div>
             <div className="md:w-2/3">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center md:text-left">
