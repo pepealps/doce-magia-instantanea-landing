@@ -3,6 +3,7 @@ import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
 import BenefitItem from "@/components/BenefitItem";
+import BonusCard from "@/components/BonusCard";
 
 const Index = () => {
   return (
@@ -15,7 +16,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row md:items-center gap-8">
             <div className="md:w-1/2 text-center md:text-left">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-                Transforme <span className="text-hotpink">Recheios Sem Fogo</span> em até <span className="bg-yellow-200 px-1">R$3.735 por mês</span> com doces irresistíveis!
+                Transforme <span className="text-hotpink">Recheios Sem Fogo</span> em até <span className="text-vibrantgreen font-extrabold">R$3.735 por mês</span> com doces irresistíveis!
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-6">
                 Descubra receitas que encantam, vendem sozinhas e ficam prontas em <span className="font-bold">15 minutos</span> — sem ligar o fogão!
@@ -106,6 +107,55 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Student Testimonials - New Section Part 1 */}
+      <section className="px-4 py-12 bg-hotpink/20">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 uppercase">
+            O que as nossas alunas estão falando sobre os recheios secretos:
+          </h2>
+          
+          <div className="flex justify-center">
+            <img 
+              src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+              alt="Comentários de alunas"
+              className="w-full max-w-[600px] rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      
+      {/* Bonus Section - New Section Part 2 */}
+      <section className="px-4 py-12 bg-purple/90 text-white">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 uppercase">
+            Além de tudo isso, você vai ganhar +4 bônus exclusivos:
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <BonusCard
+              title="Bolinho no Pote"
+              description="O Sucesso o Ano Inteiro!"
+              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+            />
+            <BonusCard
+              title="Trufas"
+              description="Irresistíveis e Altamente Lucrativas!"
+              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+            />
+            <BonusCard
+              title="Brigadeiros"
+              description="O Clássico que Faz Lucrar!"
+              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+            />
+            <BonusCard
+              title="Donuts"
+              description="A Novidade que Encanta e Lucra!"
+              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+            />
           </div>
         </div>
       </section>
