@@ -139,22 +139,22 @@ const Index = () => {
             <BonusCard
               title="Bolinho no Pote"
               description="O Sucesso o Ano Inteiro!"
-              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+              imageSrc="/lovable-uploads/91d5f335-0fdd-4731-8fcd-46c6fd23dfef.png"
             />
             <BonusCard
               title="Trufas"
               description="Irresistíveis e Altamente Lucrativas!"
-              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+              imageSrc="/lovable-uploads/9ead97cd-2336-4513-91c4-a6c1bea75da0.png"
             />
             <BonusCard
               title="Brigadeiros"
               description="O Clássico que Faz Lucrar!"
-              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+              imageSrc="/lovable-uploads/bd1e2030-a09f-4ad7-b024-f6969abff313.png"
             />
             <BonusCard
               title="Donuts"
               description="A Novidade que Encanta e Lucra!"
-              imageSrc="https://images.unsplash.com/photo-1582562124811-c09040d0a901?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
+              imageSrc="/lovable-uploads/ce506717-a286-404a-a824-9564324249f6.png"
             />
           </div>
         </div>
