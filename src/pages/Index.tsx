@@ -27,11 +27,11 @@ const Index = () => {
             </div>
             <div className="md:w-1/2 flex justify-center">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-pink rounded-2xl blur-lg opacity-30 animate-pulse"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-2xl blur-lg opacity-40 animate-pulse"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" 
-                  alt="Recheios Sem Fogo" 
-                  className="relative rounded-xl shadow-2xl w-full max-w-md z-10"
+                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=450" 
+                  alt="Ebooks Recheios Sem Fogo" 
+                  className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10"
                 />
               </div>
             </div>
