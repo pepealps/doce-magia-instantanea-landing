@@ -156,8 +156,8 @@ const Index = () => {
           </p>
           
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-xl max-w-xl mx-auto mb-8">
-            <div className="text-gray-500 line-through mb-2">De R$297</div>
-            <div className="text-3xl md:text-5xl font-extrabold text-hotpink mb-4">Por apenas R$97</div>
+            <div className="text-gray-500 line-through mb-2">De R$97</div>
+            <div className="text-3xl md:text-5xl font-extrabold text-hotpink mb-4">Por apenas R$10</div>
             <div className="text-sm text-gray-600 mb-6">Pagamento único, acesso vitalício</div>
             <CTAButton text="QUERO TRANSFORMAR MINHA VIDA AGORA" className="w-full max-w-md mx-auto" />
           </div>
@@ -165,7 +165,7 @@ const Index = () => {
           <div className="text-center text-gray-500 text-sm">
             <p>Pagamento 100% seguro</p>
             <div className="flex justify-center gap-4 mt-2">
-              <span>💳 Cartão de crédito</span>
+              <span>❖ Pagamento via PIX</span>
               <span>🔒 Ambiente seguro</span>
               <span>✅ Satisfação garantida</span>
             </div>
