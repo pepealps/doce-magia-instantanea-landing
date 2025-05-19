@@ -1,4 +1,3 @@
-
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -85,14 +84,13 @@ const Index = () => {
               Assista e <span className="text-hotpink">descubra</span> como é fácil começar
             </h2>
             <div className="relative w-full pb-[56.25%]">
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-200 rounded-lg">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-hotpink rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="w-0 h-0 border-t-8 border-b-8 border-l-12 border-t-transparent border-b-transparent border-l-white ml-1"></div>
-                  </div>
-                  <p className="text-gray-600">Vídeo demonstrativo</p>
-                </div>
-              </div>
+              <iframe 
+                className="absolute inset-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/xVJ3unlES_c" 
+                title="Recheios Sem Fogo - Como é fácil começar"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
             </div>
           </div>
         </div>
