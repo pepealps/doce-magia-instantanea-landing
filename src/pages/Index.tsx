@@ -4,6 +4,9 @@ import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
 import BenefitItem from "@/components/BenefitItem";
 import BonusCard from "@/components/BonusCard";
+import MotivesSection from "@/components/MotivesSection";
+import ScarcitySection from "@/components/ScarcitySection";
+
 const Index = () => {
   return <div className="min-h-screen bg-white font-sans">
       <UrgencyBanner />
@@ -50,6 +53,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Motives Section - NUEVA SECCIÓN 1 */}
+      <MotivesSection />
+      
+      {/* Scarcity Section - NUEVA SECCIÓN 2 */}
+      <ScarcitySection />
 
       {/* Testimonials Section */}
       <section className="px-4 py-12 bg-gray-50">
