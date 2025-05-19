@@ -94,26 +94,26 @@ const MotivesSection = () => {
           <CourseContentCard 
             title="Recheios Estruturados" 
             description="Ninho com Nutella, Dois Amores, Abacaxi, Maracujá e mais." 
-            imageSrc="https://images.unsplash.com/photo-1616173963855-90346b66928d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-            alt="Bolo cortado com recheio visível" 
+            imageSrc="/lovable-uploads/e34d89c2-549a-4bcd-afe2-9591c53db84e.png" 
+            alt="Bolo com recheio visível" 
           />
           <CourseContentCard 
             title="Massas Perfeitas" 
             description="Chocolate, Red Velvet, Baunilha, Cenoura, etc." 
-            imageSrc="https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-            alt="Massas cruas ou assadas simples" 
+            imageSrc="/lovable-uploads/ab026f3f-2e03-4371-b6b2-371b845e1a61.png" 
+            alt="Massas de chocolate" 
           />
           <CourseContentCard 
             title="Bolos Decorados Completos" 
             description="Montagem, estrutura e finalização." 
-            imageSrc="https://images.unsplash.com/photo-1561702274-ca22951271b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+            imageSrc="/lovable-uploads/ec453ed7-51dd-404e-8cad-583b6aeea72a.png" 
             alt="Bolo decorado com chantilly e cerejas" 
           />
           <CourseContentCard 
             title="Coberturas Perfeitas" 
             description="Chantininho, Ganache, Buttercream, Glacê Real." 
-            imageSrc="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-            alt="Cobertura sendo derramada" 
+            imageSrc="/lovable-uploads/c6db7a4b-442d-4048-88c2-2a96728649d8.png" 
+            alt="Cobertura de chocolate sendo derramada" 
           />
         </div>
       </div>
