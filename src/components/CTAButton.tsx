@@ -10,7 +10,7 @@ const CTAButton = ({ text, className = "" }: CTAButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
   
   const handleClick = () => {
-    window.open("https://www.ggcheckout.com/checkout/9DybsjSLl27xrojLCs2U", "_blank");
+    window.open("https://www.ggcheckout.com/checkout/v2/ljvYuOF7pnJBRbXOBhhD", "_blank");
   };
 
   return (
