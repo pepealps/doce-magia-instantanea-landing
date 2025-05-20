@@ -10,7 +10,17 @@ const CTAButton = ({ text, className = "" }: CTAButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
   
   const handleClick = () => {
-    window.open("https://www.ggcheckout.com/checkout/v2/ljvYuOF7pnJBRbXOBhhD", "_blank");
+    // Check if this is the first button by looking for "QUERO RECEBER" in the text
+    if (text.includes("QUERO RECEBER")) {
+      // Scroll to the final CTA section
+      const element = document.getElementById('final-cta');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // For other buttons, navigate to the checkout page
+      window.open("https://www.ggcheckout.com/checkout/v2/ljvYuOF7pnJBRbXOBhhD", "_blank");
+    }
   };
 
   return (

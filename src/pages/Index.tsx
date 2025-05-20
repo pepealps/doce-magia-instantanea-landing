@@ -1,4 +1,3 @@
-
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -6,7 +5,6 @@ import BenefitItem from "@/components/BenefitItem";
 import BonusCard from "@/components/BonusCard";
 import MotivesSection from "@/components/MotivesSection";
 import ScarcitySection from "@/components/ScarcitySection";
-import { WhatsApp } from "lucide-react";
 
 const Index = () => {
   return <div className="min-h-screen bg-white font-sans relative">
@@ -24,7 +22,7 @@ const Index = () => {
                 Descubra receitas que encantam, vendem sozinhas e ficam prontas em <span className="font-bold">15 minutos</span> — sem ligar o fogão!
               </p>
               <div className="mb-8 flex justify-center md:justify-start">
-                <CTAButton text="QUERO RECEBER AS RECEITAS SECRETAS" />
+                <CTAButton text="QUERO RECEBER AS RECEITAS SECRETAS POR R$10" />
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
@@ -154,7 +152,7 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="px-4 py-12 bg-gradient-to-b from-purple/5 to-hotpink/20">
+      <section className="px-4 py-12 bg-gradient-to-b from-purple/5 to-hotpink/20" id="final-cta">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-2xl md:text-4xl font-extrabold mb-4">
             O cupom aplicado só é válido <span className="bg-yellow-200 px-1">HOJE!</span>
@@ -167,7 +165,7 @@ const Index = () => {
             <div className="text-gray-500 line-through mb-2">De R$97</div>
             <div className="text-3xl md:text-5xl font-extrabold text-hotpink mb-4">Por apenas R$10</div>
             <div className="text-sm text-gray-600 mb-6">Pagamento único, acesso vitalício</div>
-            <CTAButton text="QUERO TRANSFORMAR MINHA VIDA AGORA" className="w-full max-w-md mx-auto" />
+            <CTAButton text="QUERO TRANSFORMAR MINHA VIDA AGORA POR R$10" className="w-full max-w-md mx-auto" />
           </div>
           
           <div className="text-center text-gray-500 text-sm">
@@ -205,8 +203,14 @@ const Index = () => {
         className="fixed bottom-6 left-6 z-50 bg-vibrantgreen text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
         aria-label="Contact us on WhatsApp"
       >
-        <WhatsApp size={28} />
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+          <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+          <path d="M13.5 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+          <path d="M9 13a5 5 0 0 0 6 0" />
+        </svg>
       </a>
     </div>;
 };
+
 export default Index;
