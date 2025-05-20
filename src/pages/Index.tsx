@@ -1,3 +1,4 @@
+
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -5,7 +6,7 @@ import BenefitItem from "@/components/BenefitItem";
 import BonusCard from "@/components/BonusCard";
 import MotivesSection from "@/components/MotivesSection";
 import ScarcitySection from "@/components/ScarcitySection";
-import { Whatsapp } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const Index = () => {
   return <div className="min-h-screen bg-white font-sans relative">
@@ -204,7 +205,7 @@ const Index = () => {
         className="fixed bottom-6 left-6 z-50 bg-vibrantgreen text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
         aria-label="Contact us on WhatsApp"
       >
-        <Whatsapp size={28} />
+        <MessageSquare size={28} />
       </a>
     </div>;
 };
