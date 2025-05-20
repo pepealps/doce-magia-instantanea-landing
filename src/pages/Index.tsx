@@ -1,3 +1,4 @@
+
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -5,6 +6,7 @@ import BenefitItem from "@/components/BenefitItem";
 import BonusCard from "@/components/BonusCard";
 import MotivesSection from "@/components/MotivesSection";
 import ScarcitySection from "@/components/ScarcitySection";
+import { WhatsappIcon } from "lucide-react";
 
 const Index = () => {
   return <div className="min-h-screen bg-white font-sans relative">
@@ -189,7 +191,7 @@ const Index = () => {
             <div className="flex gap-4">
               <a href="#" className="text-gray-400 hover:text-white">Política de Privacidade</a>
               <a href="#" className="text-gray-400 hover:text-white">Termos de Uso</a>
-              <a href="#" className="text-gray-400 hover:text-white">Contato</a>
+              <a href="https://wa.link/kvoiub" className="text-gray-400 hover:text-white">Contato</a>
             </div>
           </div>
         </div>
@@ -203,12 +205,7 @@ const Index = () => {
         className="fixed bottom-6 left-6 z-50 bg-vibrantgreen text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
         aria-label="Contact us on WhatsApp"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-          <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-          <path d="M13.5 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-          <path d="M9 13a5 5 0 0 0 6 0" />
-        </svg>
+        <WhatsappIcon size={28} />
       </a>
     </div>;
 };

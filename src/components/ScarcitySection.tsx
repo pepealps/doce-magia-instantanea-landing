@@ -15,7 +15,7 @@ const ScarcitySection = () => {
           </div>
           
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-yellow-300">
-            Infelizmente consigo liberar apenas <span className="bg-white text-hotpink px-2 rounded">10 cupons</span> promocionais por semana.
+            Infelizmente consigo liberar apenas <span className="inline bg-white text-hotpink px-2 rounded">10 cupons</span> promocionais por semana.
           </h2>
           
           <div className="max-w-2xl mx-auto mb-8">
@@ -31,18 +31,18 @@ const ScarcitySection = () => {
             <CTAButton text="SIM! EU QUERO AS RECEITAS SECRETAS POR R$10" className="text-xl" />
           </div>
           
-          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
+          <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 text-yellow-300">
             <div className="flex items-center gap-2 justify-center">
               <span className="text-xl">✅</span>
-              <span className="text-yellow-300">Garantia de 7 dias</span>
+              <span>Garantia de 7 dias</span>
             </div>
             <div className="flex items-center gap-2 justify-center">
               <span className="text-xl">🔒</span>
-              <span className="text-yellow-300">Pagamento seguro</span>
+              <span>Pagamento seguro</span>
             </div>
             <div className="flex items-center gap-2 justify-center">
               <span className="text-xl">📞</span>
-              <span className="text-yellow-300">Suporte via WhatsApp</span>
+              <span>Suporte via WhatsApp</span>
             </div>
           </div>
         </div>
