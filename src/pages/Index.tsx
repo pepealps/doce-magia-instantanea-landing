@@ -1,3 +1,16 @@
+
+// Declaração global para o elemento personalizado do Wistia
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'wistia-player': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        'media-id': string;
+        aspect?: string;
+      };
+    }
+  }
+}
+
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
