@@ -94,6 +94,10 @@ export default {
 					'0%, 100%': { transform: 'scale(1)' },
 					'50%': { transform: 'scale(1.05)' },
 				},
+				'pulse-scale-slow': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' },
+				},
 				'shake': {
 					'0%, 100%': { transform: 'translateX(0)' },
 					'10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
@@ -104,6 +108,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'pulse-scale': 'pulse-scale 2s infinite',
+				'pulse-scale-slow': 'pulse-scale-slow 4s infinite',
 				'shake': 'shake 0.8s ease-in-out',
 			},
 			backgroundImage: {
