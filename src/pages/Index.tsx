@@ -1,4 +1,3 @@
-
 // Declaração global para o elemento personalizado do Wistia
 declare global {
   namespace JSX {
@@ -19,9 +18,31 @@ import BonusCard from "@/components/BonusCard";
 import MotivesSection from "@/components/MotivesSection";
 import ScarcitySection from "@/components/ScarcitySection";
 import { MessageSquare } from "lucide-react";
+import { useEffect } from "react";
 
 const Index = () => {
-  return <div className="min-h-screen bg-white font-sans relative">
+  useEffect(() => {
+    // Carrega os scripts do Wistia
+    const loadWistiaScript = () => {
+      if (!document.querySelector('script[src*="wistia.com/embed"]')) {
+        const script1 = document.createElement('script');
+        script1.src = 'https://fast.wistia.com/embed/6gzr47z4bz.js';
+        script1.async = true;
+        script1.type = 'module';
+        document.head.appendChild(script1);
+        
+        const script2 = document.createElement('script');
+        script2.src = 'https://fast.wistia.com/player.js';
+        script2.async = true;
+        document.head.appendChild(script2);
+      }
+    };
+    
+    loadWistiaScript();
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white font-sans relative">
       <UrgencyBanner />
       
       {/* Hero Section */}
@@ -42,20 +63,42 @@ const Index = () => {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-2xl blur-lg opacity-40 animate-pulse"></div>
-                <div className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10">
-                  <script src="https://fast.wistia.com/player.js" async></script>
-                  <script src="https://fast.wistia.com/embed/6gzr47z4bz.js" async type="module"></script>
-                  <style dangerouslySetInnerHTML={{
-                    __html: `
-                      wistia-player[media-id='6gzr47z4bz']:not(:defined) { 
-                        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6gzr47z4bz/swatch'); 
-                        display: block; 
-                        filter: blur(5px); 
-                        padding-top:177.78%; 
-                      }
-                    `
-                  }}></style>
-                  <wistia-player media-id="6gzr47z4bz" aspect="0.5625"></wistia-player>
+                <div className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10 bg-black">
+                  <div 
+                    className="wistia_responsive_padding" 
+                    style={{ padding: '56.25% 0 0 0', position: 'relative' }}
+                  >
+                    <div 
+                      className="wistia_responsive_wrapper" 
+                      style={{ height: '100%', left: '0', position: 'absolute', top: '0', width: '100%' }}
+                    >
+                      <div 
+                        className="wistia_embed wistia_async_6gzr47z4bz videoFoam=true" 
+                        style={{ height: '100%', position: 'relative', width: '100%' }}
+                      >
+                        <div 
+                          className="wistia_swatch" 
+                          style={{
+                            height: '100%',
+                            left: '0',
+                            opacity: '0',
+                            overflow: 'hidden',
+                            position: 'absolute',
+                            top: '0',
+                            transition: 'opacity 200ms',
+                            width: '100%'
+                          }}
+                        >
+                          <img 
+                            src="https://fast.wistia.com/embed/medias/6gzr47z4bz/swatch" 
+                            style={{ filter: 'blur(5px)', height: '100%', objectFit: 'contain', width: '100%' }} 
+                            alt="" 
+                            aria-hidden="true" 
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,7 +276,8 @@ const Index = () => {
       >
         <MessageSquare size={28} />
       </a>
-    </div>;
+    </div>
+  );
 };
 
 export default Index;
