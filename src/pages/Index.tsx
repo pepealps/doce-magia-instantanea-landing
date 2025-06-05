@@ -1,4 +1,3 @@
-
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -30,7 +29,21 @@ const Index = () => {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-2xl blur-lg opacity-40 animate-pulse"></div>
-                <img alt="Ebooks Recheios Sem Fogo" className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10" src="/lovable-uploads/07530643-3f85-447d-8c42-cd73848923a4.png" />
+                <div className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10">
+                  <script src="https://fast.wistia.com/player.js" async></script>
+                  <script src="https://fast.wistia.com/embed/6gzr47z4bz.js" async type="module"></script>
+                  <style dangerouslySetInnerHTML={{
+                    __html: `
+                      wistia-player[media-id='6gzr47z4bz']:not(:defined) { 
+                        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6gzr47z4bz/swatch'); 
+                        display: block; 
+                        filter: blur(5px); 
+                        padding-top:177.78%; 
+                      }
+                    `
+                  }}></style>
+                  <wistia-player media-id="6gzr47z4bz" aspect="0.5625"></wistia-player>
+                </div>
               </div>
             </div>
           </div>
