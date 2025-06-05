@@ -24,17 +24,29 @@ const Index = () => {
   useEffect(() => {
     // Carrega os scripts do Wistia
     const loadWistiaScript = () => {
-      if (!document.querySelector('script[src*="wistia.com/embed"]')) {
+      if (!document.querySelector('script[src*="wistia.com/player.js"]')) {
         const script1 = document.createElement('script');
-        script1.src = 'https://fast.wistia.com/embed/6gzr47z4bz.js';
+        script1.src = 'https://fast.wistia.com/player.js';
         script1.async = true;
-        script1.type = 'module';
         document.head.appendChild(script1);
         
         const script2 = document.createElement('script');
-        script2.src = 'https://fast.wistia.com/player.js';
+        script2.src = 'https://fast.wistia.com/embed/6gzr47z4bz.js';
         script2.async = true;
+        script2.type = 'module';
         document.head.appendChild(script2);
+        
+        // Adiciona o estilo CSS
+        const style = document.createElement('style');
+        style.textContent = `
+          wistia-player[media-id='6gzr47z4bz']:not(:defined) { 
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6gzr47z4bz/swatch'); 
+            display: block; 
+            filter: blur(5px); 
+            padding-top:177.78%; 
+          }
+        `;
+        document.head.appendChild(style);
       }
     };
     
@@ -64,41 +76,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-2xl blur-lg opacity-40 animate-pulse"></div>
                 <div className="relative rounded-xl shadow-2xl w-full max-w-[450px] z-10 bg-black">
-                  <div 
-                    className="wistia_responsive_padding" 
-                    style={{ padding: '56.25% 0 0 0', position: 'relative' }}
-                  >
-                    <div 
-                      className="wistia_responsive_wrapper" 
-                      style={{ height: '100%', left: '0', position: 'absolute', top: '0', width: '100%' }}
-                    >
-                      <div 
-                        className="wistia_embed wistia_async_6gzr47z4bz videoFoam=true" 
-                        style={{ height: '100%', position: 'relative', width: '100%' }}
-                      >
-                        <div 
-                          className="wistia_swatch" 
-                          style={{
-                            height: '100%',
-                            left: '0',
-                            opacity: '0',
-                            overflow: 'hidden',
-                            position: 'absolute',
-                            top: '0',
-                            transition: 'opacity 200ms',
-                            width: '100%'
-                          }}
-                        >
-                          <img 
-                            src="https://fast.wistia.com/embed/medias/6gzr47z4bz/swatch" 
-                            style={{ filter: 'blur(5px)', height: '100%', objectFit: 'contain', width: '100%' }} 
-                            alt="" 
-                            aria-hidden="true" 
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <wistia-player media-id="6gzr47z4bz" aspect="0.5625"></wistia-player>
                 </div>
               </div>
             </div>

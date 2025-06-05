@@ -18,14 +18,14 @@ const CTAButton = ({ text, className = "" }: CTAButtonProps) => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // For other buttons, navigate to the new checkout page
+      // For all other buttons, navigate to the checkout page
       window.open("https://www.ggcheckout.com/checkout/v2/lkhJ0LaSIGxn2Q4JYhLq", "_blank");
     }
   };
 
   return (
     <button
-      className={`relative overflow-hidden bg-vibrantgreen hover:bg-green-600 text-white font-extrabold py-4 px-8 rounded-lg shadow-lg transform transition-all duration-300 text-lg md:text-xl uppercase tracking-wide ${isHovered ? 'animate-shake' : 'animate-pulse-scale-slow'} ${className}`}
+      className={`relative overflow-hidden bg-vibrantgreen hover:bg-green-600 text-white font-extrabold py-4 px-8 rounded-lg shadow-lg transform transition-all duration-300 text-lg md:text-xl uppercase tracking-wide ${isHovered ? 'animate-shake' : 'animate-pulse-scale-ultra-slow'} ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleClick}
