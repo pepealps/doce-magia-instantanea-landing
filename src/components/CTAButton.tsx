@@ -25,12 +25,12 @@ const CTAButton = ({ text, className = "" }: CTAButtonProps) => {
 
   return (
     <button
-      className={`relative overflow-hidden bg-vibrantgreen hover:bg-green-600 text-white font-extrabold py-4 px-8 rounded-lg shadow-lg transform transition-all duration-300 text-lg md:text-xl uppercase tracking-wide ${isHovered ? 'animate-shake' : 'animate-pulse-scale-ultra-slow'} ${className}`}
+      className={`relative overflow-hidden bg-vibrantgreen hover:bg-green-600 text-white font-extrabold py-4 px-8 rounded-lg shadow-lg transform transition-all duration-300 text-lg md:text-xl uppercase tracking-wide hover:-translate-y-1 hover:shadow-xl ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleClick}
     >
-      <div className="absolute inset-0 bg-white opacity-20 animate-pulse"></div>
+      <div className="absolute inset-0 bg-white opacity-20"></div>
       <span className="relative z-10">{text}</span>
     </button>
   );
