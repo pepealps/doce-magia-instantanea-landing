@@ -1,14 +1,10 @@
 
-import { useState } from 'react';
-
 interface CTAButtonProps {
   text: string;
   className?: string;
 }
 
 const CTAButton = ({ text, className = "" }: CTAButtonProps) => {
-  const [isHovered, setIsHovered] = useState(false);
-  
   const handleClick = () => {
     // Check if this is the first button by looking for "QUERO RECEBER" in the text
     if (text.includes("QUERO RECEBER")) {
@@ -26,8 +22,6 @@ const CTAButton = ({ text, className = "" }: CTAButtonProps) => {
   return (
     <button
       className={`relative overflow-hidden bg-vibrantgreen hover:bg-green-600 text-white font-extrabold py-4 px-8 rounded-lg shadow-lg transform transition-all duration-300 text-lg md:text-xl uppercase tracking-wide hover:-translate-y-1 hover:shadow-xl ${className}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       onClick={handleClick}
     >
       <div className="absolute inset-0 bg-white opacity-20"></div>
