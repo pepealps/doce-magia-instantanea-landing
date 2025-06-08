@@ -1,4 +1,3 @@
-
 // Declaração global para o elemento personalizado do Wistia
 declare global {
   namespace JSX {
@@ -10,7 +9,6 @@ declare global {
     }
   }
 }
-
 import UrgencyBanner from "@/components/UrgencyBanner";
 import CTAButton from "@/components/CTAButton";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -20,7 +18,6 @@ import MotivesSection from "@/components/MotivesSection";
 import ScarcitySection from "@/components/ScarcitySection";
 import { MessageSquare } from "lucide-react";
 import { useEffect } from "react";
-
 const Index = () => {
   useEffect(() => {
     // Carrega os scripts do Wistia de forma otimizada
@@ -31,14 +28,13 @@ const Index = () => {
         script1.async = true;
         script1.defer = true;
         document.head.appendChild(script1);
-        
         const script2 = document.createElement('script');
         script2.src = 'https://fast.wistia.com/embed/6gzr47z4bz.js';
         script2.async = true;
         script2.defer = true;
         script2.type = 'module';
         document.head.appendChild(script2);
-        
+
         // Adiciona o estilo CSS de forma otimizada
         const style = document.createElement('style');
         style.textContent = `
@@ -52,14 +48,12 @@ const Index = () => {
         document.head.appendChild(style);
       }
     };
-    
+
     // Carrega scripts apenas quando necessário
     const timer = setTimeout(loadWistiaScript, 100);
     return () => clearTimeout(timer);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-white font-sans relative">
+  return <div className="min-h-screen bg-white font-sans relative">
       <UrgencyBanner />
       
       {/* Hero Section - Otimizado para mobile */}
@@ -81,12 +75,7 @@ const Index = () => {
               <div className="relative w-full max-w-[500px]">
                 <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-xl sm:rounded-2xl blur-lg opacity-40 animate-pulse"></div>
                 <div className="relative rounded-lg sm:rounded-xl shadow-2xl w-full z-10 overflow-hidden">
-                  <img 
-                    src="https://i.imgur.com/MCz6Lvo.jpeg" 
-                    alt="Recheios Sem Fogo - Aprenda receitas deliciosas"
-                    className="w-full h-auto object-cover rounded-lg sm:rounded-xl"
-                    loading="eager"
-                  />
+                  <img alt="Recheios Sem Fogo - Aprenda receitas deliciosas" className="w-full h-auto object-cover rounded-lg sm:rounded-xl" loading="eager" src="/lovable-uploads/61470f1f-01a1-40e9-be98-0bb0758a450f.png" />
                 </div>
               </div>
             </div>
@@ -150,13 +139,7 @@ const Index = () => {
               Assista e <span className="text-hotpink">descubra</span> como é fácil começar
             </h2>
             <div className="relative w-full pb-[56.25%]">
-              <iframe 
-                className="absolute inset-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/xVJ3unlES_c" 
-                title="Recheios Sem Fogo - Como é fácil começar"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-                loading="lazy">
+              <iframe className="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/xVJ3unlES_c" title="Recheios Sem Fogo - Como é fácil começar" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading="lazy">
               </iframe>
             </div>
           </div>
@@ -197,12 +180,7 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6">
             <div className="md:w-1/3 flex justify-center">
-              <img 
-                src="/lovable-uploads/e2c225a7-aede-4080-9096-febf04db681c.png" 
-                alt="Garantia de 7 dias" 
-                className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain"
-                loading="lazy"
-              />
+              <img src="/lovable-uploads/e2c225a7-aede-4080-9096-febf04db681c.png" alt="Garantia de 7 dias" className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain" loading="lazy" />
             </div>
             <div className="md:w-2/3">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-center md:text-left px-2">
@@ -264,17 +242,9 @@ const Index = () => {
       </footer>
 
       {/* WhatsApp floating button - Otimizado para mobile */}
-      <a 
-        href="https://wa.link/kvoiub" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-50 bg-vibrantgreen text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
-        aria-label="Contact us on WhatsApp"
-      >
+      <a href="https://wa.link/kvoiub" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-50 bg-vibrantgreen text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300" aria-label="Contact us on WhatsApp">
         <MessageSquare size={24} className="sm:w-7 sm:h-7" />
       </a>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
