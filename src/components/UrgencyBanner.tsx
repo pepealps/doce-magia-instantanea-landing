@@ -27,10 +27,16 @@ const UrgencyBanner = () => {
 
   return (
     <div className="sticky top-0 z-50 w-full bg-hotpink text-white text-center py-3 px-4 font-bold text-sm md:text-base">
-      CUPOM DE DESCONTO APLICADO — VÁLIDO ATÉ HOJE {today} 🔥 | OFERTA ACABA EM{' '}
-      <span className="inline-block bg-black px-2 py-1 rounded text-white">
-        {minutes}:{seconds}
-      </span>
+      {timeLeft > 0 ? (
+        <>
+          CUPOM DE DESCONTO APLICADO — VÁLIDO ATÉ HOJE {today} 🔥 | OFERTA ACABA EM{' '}
+          <span className="inline-block bg-black px-2 py-1 rounded text-white">
+            {minutes}:{seconds}
+          </span>
+        </>
+      ) : (
+        'FINALIZE A COMPRA PARA GARANTIR O CUPOM'
+      )}
     </div>
   );
 };
