@@ -1,3 +1,4 @@
+
 // Declaração global para o elemento personalizado do Wistia
 declare global {
   namespace JSX {
@@ -18,6 +19,7 @@ import MotivesSection from "@/components/MotivesSection";
 import ScarcitySection from "@/components/ScarcitySection";
 import { MessageSquare } from "lucide-react";
 import { useEffect } from "react";
+
 const Index = () => {
   useEffect(() => {
     // Carrega os scripts do Wistia de forma otimizada
@@ -53,7 +55,9 @@ const Index = () => {
     const timer = setTimeout(loadWistiaScript, 100);
     return () => clearTimeout(timer);
   }, []);
-  return <div className="min-h-screen bg-white font-sans relative">
+
+  return (
+    <div className="min-h-screen bg-white font-sans relative">
       <UrgencyBanner />
       
       {/* Hero Section - Otimizado para mobile */}
@@ -245,6 +249,8 @@ const Index = () => {
       <a href="https://wa.link/kvoiub" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-50 bg-vibrantgreen text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300" aria-label="Contact us on WhatsApp">
         <MessageSquare size={24} className="sm:w-7 sm:h-7" />
       </a>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
