@@ -76,17 +76,22 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Vídeo VSL - Otimizado e responsivo */}
+            {/* Imagem substituta da VSL - Otimizada e responsiva */}
             <div className="flex justify-center mb-6">
               <div className="relative w-full max-w-[500px]">
                 <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-pink-200 to-pink-400 rounded-xl sm:rounded-2xl blur-lg opacity-40 animate-pulse"></div>
-                <div className="relative rounded-lg sm:rounded-xl shadow-2xl w-full z-10 bg-black">
-                  <wistia-player media-id="6gzr47z4bz" aspect="0.5625"></wistia-player>
+                <div className="relative rounded-lg sm:rounded-xl shadow-2xl w-full z-10 overflow-hidden">
+                  <img 
+                    src="https://i.imgur.com/MCz6Lvo.jpeg" 
+                    alt="Recheios Sem Fogo - Aprenda receitas deliciosas"
+                    className="w-full h-auto object-cover rounded-lg sm:rounded-xl"
+                    loading="eager"
+                  />
                 </div>
               </div>
             </div>
 
-            {/* Botão CTA movido para baixo do vídeo */}
+            {/* Botão CTA movido para baixo da imagem */}
             <div className="flex justify-center">
               <div className="w-full max-w-md px-2">
                 <CTAButton text="QUERO RECEBER AS RECEITAS SECRETAS POR R$10" className="w-full text-sm sm:text-base md:text-lg py-3 sm:py-4 px-4 sm:px-8" />
